@@ -1,0 +1,42 @@
+<div class="min-h-screen bg-gray-100 p-8">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-8">Mi Agenda</h1>
+
+        <!-- Formulario de Registro -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <form action="guardar.php" method="POST" class="space-y-4">
+                <input type="text" name="nombre" placeholder="Nombre completo" 
+                       class="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <input type="text" name="telefono" placeholder="Teléfono" 
+                       class="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button type="submit" 
+                        class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+                        Guardar Contacto
+                </button>
+            </form>
+        </div>
+
+        <!-- Tabla de Contactos -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-gray-50 border-b">
+                    <tr>
+                        <th class="p-3 text-sm font-semibold text-gray-600">Nombre</th>
+                        <th class="p-3 text-sm font-semibold text-gray-600">Teléfono</th>
+                        <th class="p-3 text-sm font-semibold text-gray-600 text-right">Acción</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <!-- Iterar con PHP aquí -->
+                    <tr>
+                        <td class="p-3 text-gray-700">Juan Pérez</td>
+                        <td class="p-3 text-gray-700">555-0123</td>
+                        <td class="p-3 text-right">
+                            <a href="#" onclick="return confirm('¿Seguro?')" class="text-red-500 hover:underline text-sm">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
