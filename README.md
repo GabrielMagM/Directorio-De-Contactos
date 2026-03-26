@@ -1,4 +1,4 @@
-# SenacytPrueba
+#Prueba
 
 Este proyecto es una aplicación web para la gestión de contactos, desarrollada en PHP y JavaScript, utilizando una base de datos MySQL. Permite registrar, listar y eliminar contactos a través de una interfaz sencilla.
 
